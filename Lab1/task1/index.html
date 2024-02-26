@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 HTML5</title>
+  </head>
+  <body>
+    <video id="myVideo" width="320" height="240">
+      <source src="src.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <br />
+    <input
+      type="range"
+      id="positionRange"
+      min="0"
+      max="100"
+      step="0.1"
+      oninput="setPosition(this.value)"
+    />
+    <span id="timeDisplay">00:00 / 00:00</span>
+    <br />
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="toggleMute()">Mute/Unmute</button>
+    <button onclick="setSpeed(0.5)">≪</button>
+    <button onclick="setSpeed(0.75)">◁</button>
+    <button onclick="setSpeed(1.25)">▷</button>
+    <button onclick="setSpeed(1.5)">≫</button>
+    <span>volume</span>
+    <input
+      type="range"
+      id="volumeRange"
+      min="0"
+      max="1"
+      step="0.01"
+      oninput="setVolume(this.value)"
+    />
+
+    <br />
+    <span>Speed</span>
+    <input
+      type="range"
+      id="speedRange"
+      min="0.5"
+      max="2"
+      step="0.25"
+      value="1"
+      oninput="setSpeed(this.value)"
+    />
+    <br />
+    <script src="script.js"></script>
+  </body>
+</html>

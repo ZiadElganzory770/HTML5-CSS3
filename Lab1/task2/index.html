@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2 HTML 5</title>
+    <style>
+      #colorText {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="redRange">Red:</label>
+    <input type="range" id="redRange" min="0" max="255" value="0" />
+    <br />
+    <label for="greenRange">Green:</label>
+    <input type="range" id="greenRange" min="0" max="255" value="0" />
+    <br />
+    <label for="blueRange">Blue:</label>
+    <input type="range" id="blueRange" min="0" max="255" value="0" />
+    <br /><br />
+    <div id="colorText">
+      Change the 3 color ranges above and<br />
+      observe my color change
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
