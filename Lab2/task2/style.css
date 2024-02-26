@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#circle1 {
+    fill: url(#myGradient);
+}
+#circle2 {
+    fill: url(#myGradient2);
+}

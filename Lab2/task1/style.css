@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+svg{
+    border: 4px solid black;
+    width: 600px;
+    height: 600px;
+    margin-top: 2em;
+}
+
+.upperRect {
+    width: 100%;
+    height: 300px;
+}
+
+#rect1 {
+    fill: url(#Gradient1);
+    }
+    
+#rect2 {
+    fill: url(#Gradient2);
+}
+
+
+    
