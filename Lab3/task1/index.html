@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3 Task 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Change email address</h1>
+      <form>
+        <input
+          type="text"
+          id="usrname"
+          name="usrname"
+          required
+          pattern="[A-Za-z]+"
+          placeholder="enter your name"
+        /><br />
+        <span>Name must contain only alphabetical characters!</span>
+        <input
+          type="email"
+          id="usrmail"
+          name="usrmail"
+          required
+          placeholder="enter your email"
+        /><br />
+        <span>Please enter a valid email address!</span>
+        <input type="submit" value="Change" />
+      </form>
+    </div>
+  </body>
+</html>
